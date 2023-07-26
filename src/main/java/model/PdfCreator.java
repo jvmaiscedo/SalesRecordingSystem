@@ -22,7 +22,7 @@ public class PdfCreator {
         this.vendas = vendas;
         this.document = new Document(PageSize.A4, 50, 50, 50, 50);
         String data = vendas.get(0).getDataRelatorio();
-        this.titulo = "Relátório-Dia-"+data.substring(0,2);
+        this.titulo = "Relatório-Dia-"+data.substring(0,2);
         String descricao = "RELATÓRIO DO DIA ";
 
         try {
@@ -45,7 +45,7 @@ public class PdfCreator {
         this.vendas = vendas;
         this.document = new Document(PageSize.A4, 50, 50, 50, 50);
         String data = vendas.get(0).getDataRelatorio().substring(3,10);
-        this.titulo = "Relátório-Mês-"+data.substring(0,2);
+        this.titulo = "Relatório-Mês-"+data.substring(0,2);
         String descricao = "RELATÓRIO DO MÊS ";
 
         try {
